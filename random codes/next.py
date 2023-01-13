@@ -46,7 +46,7 @@
 
 
 
-c = "2020"
-d = c.split("2")
-print(d)
+# c = "2020"
+# d = c.split("2")
+# print(d)
 

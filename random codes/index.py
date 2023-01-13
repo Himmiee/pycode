@@ -7,11 +7,11 @@
 # b = 7
 # c = -1
 
+
 # my_calc = -b + (b**2 - 4*a*c)**0.5
 # print(my_calc)
 # final_calc = my_calc / (2*a)
 # print(final_calc)
-
 
 # a = 4/3
 # pii = 3.142
@@ -48,9 +48,10 @@
 # string_1 = "This is a string"
 # string_2 = "I love this string"
 # print(string_1+ " " +string_2)
-# print(string_1[:12])
+# print(string_1)
+# print(string_1[0:2:10])
 
-# Hlai
+#  Hlai
 
 # first_name = input("Enter your first name: ")
 # last_name = input("Enter your last name: ")
@@ -113,8 +114,38 @@
 # '{the_text}' a number of {count_text} times"""
 
 #Functions
+
+# def my_function():
+#     print("my name")
+
+# my_function()
+
+# def greet(name):
+#     print("Hello," + name + " Good morning!")
+# greet('ayo')
+
+# def number_calc(num):
+
+#     if  num >= 0:
+#         return num
+#     else:
+#         return -num
+
+# print(number_calc(2))
+# print(number_calc(-4))
+
+
+
+
+
+
+
+
+
+
 # greeting = 'Hello'
 # def my_name():
+#     greeting = 'Hello'
 #     print(greeting)
 
 # my_name()  
@@ -170,8 +201,8 @@
 
 # import random
 # a = [1,2,3,4,5,6,7,8,9]
-# # random.shuffle(a)
-# # b = random.sample(a,3)
+# random.shuffle(a)
+# b = random.sample(a,3)
 # random.shuffle(a)
 # com_choice = random.choice(a)
 # user = int(input("Your choice\n:>"))
@@ -181,15 +212,15 @@
 #     if user > com_choice:
 #        print("Too high")
 #     else:
-#         print("Too low")
-#     print("You lose")       
+    #     print("Too low")
+    # print("You lose")       
 
 
 # import random
 # val = ['scissors','rock','paper']
 # random.shuffle(val)
 # com_choice = random.choice(val)
-# # print(com_choice)
+# print(com_choice)
 # print("This is a game of rock, paper, scissors")
 # user = input("Your choice\n:>").lower()
 # if user == com_choice:
@@ -223,6 +254,18 @@
 #       continue
 #     print(i)
 
+# numbers = [2,3,4]
+# sum = 0
+
+# for val in numbers:
+#     sum = sum + val
+
+# print(sum)
+# for i in range(2,9,2):
+#  print(i)
+
+# print(set(range(0,3)))
+
 # my_arr = [1,2,3,4,15,22,21,33,50,55,72,66,96]
 
 # for i in my_arr:
@@ -251,33 +294,50 @@
 #     print(prime_no(no))
 #     print(no, "isn't prime")
 
-import random
-print("Guess tje computer's choice to win the price")
-a = [1,2,3,4,5]
+# import random
 
-random.shuffle(a)
-trial = 3
-score = 0
+# data = {}
 
-while trial > 0:
-    print("\n Select a random number ")
-    com_choice = random.choice(a)
-    user = int(input("Your choice\n:>"))
-    if user == com_choice:
-        print("You win!")
-        score+=2
-        trial+=1
-        print(f"You have won an extra trial")
-        print(f"{trial} trial(s) left")
-    else:
-        if user > com_choice:
-            print("Too High")
-        else:
-            print("Too Low")
-        trial-=1
-        print(f"{trial} trial(s) left")
-print(f"\nYou scores {score} points") 
-print("Game over")                      
+# print("Guess the computer's choice to win the price")
+# a = [1,2,3,4,5]
+
+# random.shuffle(a)
+# trial = 3
+# score = 0
+
+# while True:
+#     username = input("Username \n:>>")
+#     trial = 3
+#     score = 0
+
+#     while trial > 0:
+#         print("\n Select a random number ")
+#         com_choice = random.choice(a)
+#         user = int(input("Your choice\n:>"))
+#         if user == com_choice:
+#             print("You win!")
+#             score+=2
+#             trial+=1
+#             print(f"You have won an extra trial")
+#             print(f"{trial} trial(s) left")
+#         else:
+#             if user > com_choice:
+#                 print("Too High")
+#             else:
+#                 print("Too Low")
+#             trial-=1
+#             print(f"{trial} trial(s) left")
+
+#     prev_score = data.get(username, 0)
+#     if score > prev_score:
+#         print("You've just beat your previous high score")
+#         data[username] = score       
+#     print(f"\nYou scores {score} points") 
+#     print("Game over")  
+
+#     choice = input("play again?Y/n: \n>").lower()
+#     if choice == "n":
+#         break                    
 
   
 
@@ -287,3 +347,12 @@ print("Game over")
 
 
 
+
+# my_list = [1,2,3,4,5,6,7,8,9]
+# # my_list = [1,3,5,7,9]
+
+# sum = 0
+# for i in my_list:
+#     if i % 2 == 0:
+#         sum = sum + i
+#     print(sum)
